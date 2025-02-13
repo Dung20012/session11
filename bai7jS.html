@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Nhập số a
+        var a = parseFloat(prompt("Mời bạn nhập vào số a"));
+
+        // Nhập số b
+        var b = parseFloat(prompt("Mời bạn nhập vào số b"))
+
+        // Nhập phép toán
+        var operator = prompt("Mời bạn nhập vào phép tính (+, -, *, /)")
+
+        // Khai báo biến kết quả
+        var result
+
+        // Xử lý phép toán
+        switch (operator) {
+            case "+":
+                result = a + b;
+                break;
+            case "-":
+                result = a - b;
+                break;
+            case "*":
+                result = a * b;
+                break;
+            case "/":
+                if (b !== 0) {
+                    result = a / b;
+                } else {
+                    alert("Lỗi: Không thể chia cho 0!");
+                    result = "Không xác định";
+                }
+                break;
+            default:
+                alert("Phép toán không hợp lệ!");
+                result = "Không xác định";
+        }
+
+        // Hiển thị kết quả
+        alert(`Kết quả của phép tính trên: ${a} ${operator} ${b} = ${result}`)
+
+    </script>
+</body>
+</html>
