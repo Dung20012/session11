@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Nhập ngày và tháng sinh
+    var date = parseInt(prompt("Nhập ngày sinh (1-31):"))
+    var month = parseInt(prompt("Nhập tháng sinh (1-12):"))
+
+    // Xác định cung hoàng đạo
+    var zodiacSign = ""
+
+    switch (month) {
+        case 1:
+            zodiacSign = date <= 19 ? "Ma Kết" : "Bảo Bình";
+            break;
+        case 2:
+            zodiacSign = date <= 18 ? "Bảo Bình" : "Song Ngư";
+            break;
+        case 3:
+            zodiacSign = date <= 20 ? "Song Ngư" : "Bạch Dương";
+            break;
+        case 4:
+            zodiacSign = date <= 19 ? "Bạch Dương" : "Kim Ngưu";
+            break;
+        case 5:
+            zodiacSign = date <= 20 ? "Kim Ngưu" : "Song Tử";
+            break;
+        case 6:
+            zodiacSign = date <= 21 ? "Song Tử" : "Cự Giải";
+            break;
+        case 7:
+            zodiacSign = date <= 22 ? "Cự Giải" : "Sư Tử";
+            break;
+        case 8:
+            zodiacSign = date <= 22 ? "Sư Tử" : "Xử Nữ";
+            break;
+        case 9:
+            zodiacSign = date <= 22 ? "Xử Nữ" : "Thiên Bình";
+            break;
+        case 10:
+            zodiacSign = date <= 22 ? "Thiên Bình" : "Thiên Yết";
+            break;
+        case 11:
+            zodiacSign = date <= 21 ? "Thiên Yết" : "Nhân Mã";
+            break;
+        case 12:
+            zodiacSign = date <= 21 ? "Nhân Mã" : "Ma Kết";
+            break;
+        default:
+            alert("Tháng sinh không hợp lệ!");
+            zodiacSign = "";
+    }
+
+    // Hiển thị kết quả nếu hợp lệ
+    if (zodiacSign) {
+        alert(`Cung hoàng đạo của bạn là: ${zodiacSign}`)
+    }
+    </script>
+</body>
+</html>
