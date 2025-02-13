@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Nhập tên đăng nhập
+        var username = prompt("Enter your username:")
+
+        // Kiểm tra tên đăng nhập
+        if (username === "ADMIN") {
+            // Nếu là ADMIN, yêu cầu nhập mật khẩu
+            var password = prompt("Enter your password:") // Nhập mật khẩu của bạn
+
+        if (password === "TheMaster") { // Chủ nhân của toii
+            alert("Welcome!") // Chào mừng
+        } else if (password === null) {
+            alert("Cancelled.") // Đã hủy
+        } else {
+            alert("Wrong password.") // Mật khẩu sai
+        }
+        } else if (username === null) {
+            alert("Cancelled.") // Đã hủy
+        } else {
+            alert("I don’t know you.") // Tôi không biết bạn
+        }
+    </script>
+</body>
+</html>
