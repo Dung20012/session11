@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function kiemTraNamNhuan(nam) {
+        if ((nam % 4 === 0 && nam % 100 !== 0) || (nam % 400 === 0)) {
+            return true
+        }
+        return false
+        }
+
+        // Nhập năm
+        var nam = parseInt(prompt("Nhập một năm: "), 10)
+
+        // Nhập và ktra kết quả
+        if (kiemTraNamNhuan(nam)) {
+            alert(`${nam} là năm nhuận.`)
+        } else {
+            alert(`${nam} không phải là năm nhuận.`)
+        }
+    </script>
+</body>
+</html>
